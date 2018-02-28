@@ -46,6 +46,7 @@ public class TestController {
     @RequestMapping("/edit")
     @ResponseBody
     public String edit() {
+        System.out.print("weq");
         return "edit success";
     }
 
