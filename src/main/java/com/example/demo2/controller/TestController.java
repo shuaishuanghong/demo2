@@ -63,6 +63,7 @@ public class TestController {
 
             User user = (User) subject.getPrincipal();
             session.setAttribute("user", user);
+            session.setAttribute("userWS", user);
             return "index";
         } catch (Exception e) {
             return "login";
