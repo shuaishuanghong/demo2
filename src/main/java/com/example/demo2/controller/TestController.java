@@ -61,7 +61,6 @@ public class TestController {
 
             subject.login(token);
 
-
             User user = (User) subject.getPrincipal();
             session.setAttribute("user", user);
             return "index";
