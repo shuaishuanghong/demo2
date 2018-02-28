@@ -56,7 +56,11 @@ public class TestController {
         UsernamePasswordToken token = new UsernamePasswordToken(username, password);
         Subject subject = SecurityUtils.getSubject();
         try {
+
+
             subject.login(token);
+
+
             User user = (User) subject.getPrincipal();
             session.setAttribute("user", user);
             return "index";
